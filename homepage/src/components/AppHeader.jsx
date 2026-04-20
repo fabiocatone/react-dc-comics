@@ -1,6 +1,6 @@
 import LogoDC from '../assets/img/dc-logo.png'
 export default function AppHeader() {
-
+const menuNav = ["Characters","Comics","Movies","TV","Games","Collectibles","Videos","Fans","News","Shop",]
 
     return (
         <header>
@@ -12,33 +12,11 @@ export default function AppHeader() {
 
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">CHARACTERS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active text-primary" aria-current="page" href="#">COMICS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">MOVIES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">TV</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Games</a>
-                                </li><li class="nav-item">
-                                    <a class="nav-link" href="#">Collectibles</a>
-                                </li><li class="nav-item">
-                                    <a class="nav-link" href="#">Videos</a>
-                                </li><li class="nav-item">
-                                    <a class="nav-link" href="#">Fans</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">News</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Shop</a>
-                                </li>
+                                {menuNav.map((item) =>
+                                    (<li class="nav-item">
+                                    <a class="nav-link" href="#">{item}</a>
+                                </li>)
+                                )}
                                 
                             </ul>
                         </div>
