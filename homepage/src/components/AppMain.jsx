@@ -7,15 +7,16 @@ export default function AppMain() {
             <img className="jumboimg" src={JumbotronImg}/>
         </div>
         <div className="content ">
-            <div className="comicsList container d-flex">
+            <div className="comicsList container d-flex text-white flex-row flex-wrap">
                 {comics.map((comic) =>
                 (
-                  <div><image src= {comic.thumb}/>
+                  <div className="comicSpace col-2 p-2"><img className="ComicImg" src= {comic.thumb}/>
                   <p>{comic.title}</p> </div>
 
                   
 
                 ))}
+                <button className="buttComic bg-primary text-white p-2 text-center"> Load More</button>
             </div>
 
             

@@ -24,9 +24,9 @@ const menuNav = [{
 
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
-                                {menuNav.map((item) =>
+                                {menuNav.map((item,index) =>
                                     (<li class="nav-item">
-                                    <a class="nav-link" href={item.link}>{item.name}</a>
+                                    <a class="nav-link" key={index} href={item.link}>{item.name}</a>
                                 </li>)
                                 )}
                                 
