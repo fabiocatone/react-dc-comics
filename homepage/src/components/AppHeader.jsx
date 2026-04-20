@@ -1,6 +1,18 @@
 import LogoDC from '../assets/img/dc-logo.png'
 export default function AppHeader() {
-const menuNav = ["Characters","Comics","Movies","TV","Games","Collectibles","Videos","Fans","News","Shop",]
+const menuNav = [{
+    name:"Characters",
+    link: "/charachters"},
+    {name:"Comics", link: "/comics"},
+    {name:"Movies", link: "/movies"},
+    {name:"TV", link: "/tv"},
+    {name:"Games", link: "/games"},
+    {name:"Collectibles", link: "/collectibles"},
+    {name:"Videos", link: "/videos"},
+    {name:"Fans", link: "/fans"},
+    {name:"News", link: "/news"},
+    {name:"Shop", link: "/shop"}
+]
 
     return (
         <header>
@@ -14,7 +26,7 @@ const menuNav = ["Characters","Comics","Movies","TV","Games","Collectibles","Vid
                             <ul class="navbar-nav">
                                 {menuNav.map((item) =>
                                     (<li class="nav-item">
-                                    <a class="nav-link" href="#">{item}</a>
+                                    <a class="nav-link" href={item.link}>{item.name}</a>
                                 </li>)
                                 )}
                                 
