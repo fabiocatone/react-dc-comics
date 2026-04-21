@@ -6,12 +6,16 @@ export default function AppMain() {
         <div className="jumbotron">
             <img className="jumboimg" src={JumbotronImg} />
         </div>
+        <div className="badge bg-primary text-uppercase text-white text-center p-2">
+           Current Series
+        </div>
+    
         <div className="content ">
-            <div className="comicsList container d-flex text-white flex-row flex-wrap ">
+            <div className="comicsList p-4 container d-flex text-white flex-row flex-wrap ">
                 {comics.map((comic) =>
                 (
-                    <div className="comicSpace col-2 p-2"><img className="ComicImg" src={comic.thumb} />
-                        <p>{comic.title}</p> </div>
+                    <div key={comic.id} className="comicSpace col-2"><img className="ComicImg" src={comic.thumb} />
+                        <p className="text-left p-1">{comic.title}</p> </div>
 
 
 

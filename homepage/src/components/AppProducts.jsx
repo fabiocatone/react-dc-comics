@@ -28,10 +28,10 @@ const products = [
         link: "/dcpowervisa"},]
 
          return (
-<div className="products  d-flex bg-primary justify-content-center">
+<div className="products d-flex bg-primary justify-content-center">
 {products.map((product =>
-    (<div className="row d-flex align-items-center m-4 justify-content-center"><img src = {product.thumb} className="col-3"/> 
-        <p key={product.id} className=" listProduct text-white text-uppercase p-1 col-4">{product.name}</p>
+    (<div  key={product.id} className="row d-flex align-items-center m-4 justify-content-center"><img src = {product.thumb} className="col-3"/> 
+        <p className=" listProduct text-white text-uppercase p-1 col-4">{product.name}</p>
     </div>
     ) 
 ))}

@@ -12,7 +12,8 @@ body {
 .jumboimg {
   height: 300px;
   width: 100%;
-  object-fit: cover
+  object-fit: cover;
+  object-position: top
 }
 
 .ComicImg {
@@ -41,4 +42,13 @@ a {
 ul {
   list-style-type: none;
   text-decoration-color: none;
+}
+
+.badge {
+ position: absolute;
+ left: 450px;
+ border-radius: none;
+ top: 250px;
+ font-size: 1rem;
+ 
 }
