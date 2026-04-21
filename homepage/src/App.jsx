@@ -2,6 +2,7 @@
 import AppHeader from "./components/AppHeader"
 import AppMain from "./components/AppMain"
 import AppFooter from "./components/AppFooter"
+import AppProducts from "./components/AppProducts"
 function App() {
 
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <AppHeader />
       <AppMain/>
+      <AppProducts/>
       <AppFooter/>
     </>
   )

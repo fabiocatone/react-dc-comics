@@ -17,10 +17,10 @@ const menuNav = [{
     return (
         <header>
 
-            <div className="container d-flex p-2">
-                <img src={LogoDC} style={{ width: "100px" }} />
+            <div className="container d-flex ">
+                <img src={LogoDC} style={{ width: "60px", height:"60px"}} className='my-2'  />
                 <nav className="navbar navbar-expand-lg  ms-auto text-secondary text-uppercase">
-                    <div class="container-fluid p-4 ">
+                    <div class=" p-2 ">
 
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
